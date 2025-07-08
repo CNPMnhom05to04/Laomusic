@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App - Frontend Only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="/picture/logo.png" class="logo" draggable="false">
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fa fa-home"></i>
+                    Trang chủ
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa fa-compass"></i>
+                    Bảng xếp hạng
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa fa-book"></i>
+                    chủ đề và thể loại
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Bạn muốn nghe gì">
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-app">
+                <div class="music-section">
+                    <h1 class="section-title">Nghe gì hôm nay</h1>
+                    <div class="music-list" id="top1">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="music-app">
+                <div class="music-section">
+                    <h1 class="section-title">Nhạc Việt</h1>
+                    <div class="music-list" id="top3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-app">
+                <div class="music-section">
+                    <h1 class="section-title">ຜ່ອນຄາຍ</h1>
+                    <div class="music-list" id="top2">
+                    </div>
+                </div>
+
+
+
+                <script src="app.js">
+                </script>
+            </div>
+        </div>
+</body>
+
+</html>
