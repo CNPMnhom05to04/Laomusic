@@ -15,7 +15,11 @@
 /* Sidebar */
 .sidebar {
     width: 240px;
-    background: linear-gradient(180deg, #1e1e1e, #121212);
+    background: linear-gradient(180deg,
+
+            #3a1c1c 0%,
+
+            #1a0d0d 100%);
     color: white;
     padding: 24px 12px;
     position: fixed;
@@ -59,12 +63,12 @@
 
 .nav-item:hover {
     color: white;
-    background: #282828;
+
 }
 
 .nav-item.active {
     color: white;
-    background: #282828;
+
 }
 
 /* Main Content */
@@ -72,6 +76,9 @@
     flex: 1;
     margin-left: 240px;
     padding: 24px;
+    background: linear-gradient(180deg,
+            #3a1c1c 0%,
+            #1a0d0d 100%);
 }
 
 /* Search Bar */
@@ -157,70 +164,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-
-
-.music-card {
-    width: 200px;
-    height: 200px;
-
-    position: relative;
-    border-radius: 8px;
-
-    overflow: hidden;
-
-    transition: all 0.3s ease;
-    /* Dành chỗ cho phần info */
-}
-
-.music-card:hover {
-    background: #282828;
-    transform: translateY(-5px);
-}
-
-
-.music-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.music-card:hover .music-image {
-    transform: scale(1.05);
-}
-
-.music-info {
-    padding: 16px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: transparent;
-    color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.music-card:hover .music-info {
-    transform: translateY(0);
-}
-
-.music-info h3 {
-    font-size: 14px;
-    margin-bottom: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.music-info p {
-    font-size: 12px;
-    color: #a7a7a7;
-    margin: 0;
 }
 
 /* Responsive */

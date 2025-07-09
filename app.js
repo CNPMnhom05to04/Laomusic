@@ -1,5 +1,3 @@
-
-
 class MusicPlayer {
     constructor(containerSelector, musicData) {
         this.container = document.querySelector(containerSelector);
@@ -56,80 +54,83 @@ const songs = [
     { cover: "./picture/SonTung.jpg", title: "Chạy Ngay Đi", artist: "Sơn Tùng M-TP" },
 ];
 
-const top2 = [
-    {
-        cover: "https://i.ytimg.com/vi/-GiQEctEv3c/hqdefault.jpg",
-        title: "ສິມຈົ່ງຄືກັນນ້ອຍ",
-        artist: "NGA SENGAMPHONE",
+// const top2 = [
+//     {
+//         cover: "https://i.ytimg.com/vi/-GiQEctEv3c/hqdefault.jpg",
+//         title: "ສິມຈົ່ງຄືກັນນ້ອຍ",
+//         artist: "NGA SENGAMPHONE",
 
-    },
-    {
-        cover: "https://i.ytimg.com/vi/1Q0aSDUCRQw/hqdefault.jpg",
-        title: "คำถามที่อยากฟังคำตอบ",
-        artist: "GRAMMY GOLD",
+//     },
+//     {
+//         cover: "https://i.ytimg.com/vi/1Q0aSDUCRQw/hqdefault.jpg",
+//         title: "คำถามที่อยากฟังคำตอบ",
+//         artist: "GRAMMY GOLD",
 
-    },
-    {
+//     },
+//     {
 
-        cover: "https://i.ytimg.com/vi/FxFPSs71FSI/hqdefault.jpg",
-        title: "จักรวาลไหน - Monica",
-        artist: "19.Official",
+//         cover: "https://i.ytimg.com/vi/FxFPSs71FSI/hqdefault.jpg",
+//         title: "จักรวาลไหน - Monica",
+//         artist: "19.Official",
 
-    },
-    {
+//     },
+//     {
 
-        cover: "https://i.ytimg.com/vi/Ir_qJteOI3c/hqdefault.jpg",
-        title: "โลกทั้งใบ - เล็ก รัชชานนท์",
-        artist: "Genierock",
+//         cover: "https://i.ytimg.com/vi/Ir_qJteOI3c/hqdefault.jpg",
+//         title: "โลกทั้งใบ - เล็ก รัชชานนท์",
+//         artist: "Genierock",
 
-    },
-    {
+//     },
+//     {
 
-        cover: "https://i.ytimg.com/vi/kAYJ9I4nFBE/hqdefault.jpg",
-        title: "ลำล่อง ลาวอีสาน",
-        artist: "DOKJAN STUDIO",
+//         cover: "https://i.ytimg.com/vi/kAYJ9I4nFBE/hqdefault.jpg",
+//         title: "ลำล่อง ลาวอีสาน",
+//         artist: "DOKJAN STUDIO",
 
-    },
-];
+//     },
+// ];
 
-const top3 = [
-    {
+// const top3 = [
+//     {
 
-        artist: "Sơn Tùng M-TP",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/artist/IWZ97DB0_1742795934782.jpg",
+//         artist: "Sơn Tùng M-TP",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/artist/IWZ97DB0_1742795934782.jpg",
 
-    },
-    {
+//     },
+//     {
 
-        name: "Thùy Chi",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/avatar/1743150145275.jpg",
+//         name: "Thùy Chi",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/avatar/1743150145275.jpg",
 
-    },
-    {
+//     },
+//     {
 
-        name: "Hòa Minzy",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
-    },
-    {
+//         name: "Hòa Minzy",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
+//     },
+//     {
 
-        name: "Bùi Anh Tuấn",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
+//         name: "Bùi Anh Tuấn",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
 
-    },
-    {
+//     },
+//     {
 
-        name: "Bằng Kiều",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
+//         name: "Bằng Kiều",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
 
-    },
-    {
+//     },
+//     {
 
-        name: "Hà Anh Tuấn",
-        cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
+//         name: "Hà Anh Tuấn",
+//         cover: "https://demo-sso-image.tinasoft.io/laonet/genre/1742141874509.jpg",
 
-    },
-];
+//     },
+// ];
+
+
 const player = new MusicPlayer("#top1", songs);
-const player2 = new MusicPlayer("#top2", top2);
-const player3 = new MusicPlayer("#top3", top3);
+// const Youtube2 = new MusicPlayer("#top2", top2);
+// const Youtube3 = new MusicPlayer("#top3", top3);
+
 
