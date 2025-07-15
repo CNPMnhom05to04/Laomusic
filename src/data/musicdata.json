@@ -1,0 +1,74 @@
+{
+    "sections": [
+        {
+            "title": "Nghe gì hôm nay",
+            "items": [
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Muộn Rồi Mà Sao Còn",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Chúng Ta Không Thuộc Về Nhau",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Nơi Này Có Anh",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Lạc Trôi",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Hãy Trao Cho Anh",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "There's No One At All",
+                    "subtitle": "Sơn Tùng M-TP"
+                },
+                {
+                    "image": "src/assests/picture/SonTung.jpg",
+                    "name": "Chạy Ngay Đi",
+                    "subtitle": "Sơn Tùng M-TP"
+                }
+            ]
+        },
+        {
+            "title": "Nhạc TOP100",
+            "items": [
+                {
+                    "image": "https://i.ytimg.com/vi/-GiQEctEv3c/hqdefault.jpg",
+                    "name": "ສິມຈົ່ງຄືກັນນ້ອຍ",
+                    "subtitle": "NGA SENGAMPHONE"
+                },
+                {
+                    "image": "https://i.ytimg.com/vi/1Q0aSDUCRQw/hqdefault.jpg",
+                    "name": "คำถามที่อยากฟังคำตอบ",
+                    "subtitle": "GRAMMY GOLD"
+                },
+                {
+                    "image": "https://i.ytimg.com/vi/FxFPSs71FSI/hqdefault.jpg",
+                    "name": "จักรวาลไหน - Monica",
+                    "subtitle": "19.Official"
+                },
+                {
+                    "image": "https://i.ytimg.com/vi/Ir_qJteOI3c/hqdefault.jpg",
+                    "name": "โลกทั้งใบ - เล็ก รัชชานนท์",
+                    "subtitle": "Genierock"
+                },
+                {
+                    "image": "https://i.ytimg.com/vi/kAYJ9I4nFBE/hqdefault.jpg",
+                    "name": "ลำล่อง ลาวอีสาน",
+                    "subtitle": "DOKJAN STUDIO"
+                }
+            ]
+        }
+    ]
+}
