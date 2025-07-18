@@ -4,37 +4,47 @@
             "title": "Nghe gì hôm nay",
             "items": [
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "1",
+                    "image": "SonTung.jpg",
                     "name": "Muộn Rồi Mà Sao Còn",
-                    "subtitle": "Sơn Tùng M-TP"
+                    "subtitle": "Sơn Tùng M-TP",
+                    "url": "https://www.youtube.com/watch?v=xypzmu5mMPY&list=RDxypzmu5mMPY&start_radio=1"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "2",
+                    "image": "SonTung.jpg",
                     "name": "Chúng Ta Không Thuộc Về Nhau",
-                    "subtitle": "Sơn Tùng M-TP"
+                    "subtitle": "Sơn Tùng M-TP",
+                    "url": "https://www.youtube.com/watch?v=qGRU3sRbaYw&list=RDqGRU3sRbaYw&start_radio=1"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "3",
+                    "image": "SonTung.jpg",
                     "name": "Nơi Này Có Anh",
-                    "subtitle": "Sơn Tùng M-TP"
+                    "subtitle": "Sơn Tùng M-TP",
+                    "url": "https://www.youtube.com/watch?v=FN7ALfpGxiI&list=RDFN7ALfpGxiI&start_radio=1"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "4",
+                    "image": "SonTung.jpg",
                     "name": "Lạc Trôi",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "5",
+                    "image": "SonTung.jpg",
                     "name": "Hãy Trao Cho Anh",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "6",
+                    "image": "SonTung.jpg",
                     "name": "There's No One At All",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "image": "src/assests/picture/SonTung.jpg",
+                    "id": "7",
+                    "image": "SonTung.jpg",
                     "name": "Chạy Ngay Đi",
                     "subtitle": "Sơn Tùng M-TP"
                 }
@@ -44,26 +54,31 @@
             "title": "Nhạc TOP100",
             "items": [
                 {
+                    "id": "8",
                     "image": "https://i.ytimg.com/vi/-GiQEctEv3c/hqdefault.jpg",
                     "name": "ສິມຈົ່ງຄືກັນນ້ອຍ",
                     "subtitle": "NGA SENGAMPHONE"
                 },
                 {
+                    "id": "9",
                     "image": "https://i.ytimg.com/vi/1Q0aSDUCRQw/hqdefault.jpg",
                     "name": "คำถามที่อยากฟังคำตอบ",
                     "subtitle": "GRAMMY GOLD"
                 },
                 {
+                    "id": "10",
                     "image": "https://i.ytimg.com/vi/FxFPSs71FSI/hqdefault.jpg",
                     "name": "จักรวาลไหน - Monica",
                     "subtitle": "19.Official"
                 },
                 {
+                    "id": "11",
                     "image": "https://i.ytimg.com/vi/Ir_qJteOI3c/hqdefault.jpg",
                     "name": "โลกทั้งใบ - เล็ก รัชชานนท์",
                     "subtitle": "Genierock"
                 },
                 {
+                    "id": "12",
                     "image": "https://i.ytimg.com/vi/kAYJ9I4nFBE/hqdefault.jpg",
                     "name": "ลำล่อง ลาวอีสาน",
                     "subtitle": "DOKJAN STUDIO"

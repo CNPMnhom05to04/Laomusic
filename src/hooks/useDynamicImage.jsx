@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 // Tạo context cho toàn bộ ảnh trong thư mục src/assets/picture
 const imagesContext = require.context(
-    '../assets/picture',   // thư mục
+    '../assests/picture',   // thư mục
     false,
     /.(png|jpe?g|svg)$/
 );
