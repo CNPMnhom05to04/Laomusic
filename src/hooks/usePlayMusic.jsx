@@ -1,27 +1,55 @@
-// hooks/usePlayMusic.js
+// src/hooks/usePlayMusic.js
 import { useRef, useEffect, useCallback } from 'react';
+import { getDynamicAudio } from '../utils/getDynamicAudio';
 
 export default function usePlayMusic(id, tracks = []) {
-  const audioRef = useRef(new Audio());
+  // Giữ ref đến Audio instance
+  const audioRef = useRef(null);
 
-  const play = useCallback(() => {
-    const current = tracks.find(items => items.id == id);
-    console.log('Playing track:', current);
-
-    if (current) {
+  // Hàm tạo hoặc recreate Audio
+  const resetAudio = (url) => {
+    // Hủy instance cũ nếu có
+    if (audioRef.current) {
       audioRef.current.pause();
-      audioRef.current.src = current.url;
-      audioRef.current.play();
+      audioRef.current.src = '';
+      audioRef.current = null;
     }
+    // Tạo mới và gán src
+    const audio = new Audio(url);
+    audio.loop = false;
+    audioRef.current = audio;
+    return audio;
+  };
+
+  // play trả về Promise từ audio.play()
+  const play = useCallback(() => {
+    const currentTrack = tracks.find(item => item.id === id);
+    if (!currentTrack) return Promise.resolve();
+
+    const url = getDynamicAudio(currentTrack.url);
+    if (!url) return Promise.resolve();
+
+    // Destroy + recreate trước khi play
+    const audio = resetAudio(url);
+    // Bắt sự kiện ended nếu cần
+    audio.addEventListener('ended', () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+    // Play và trả về promise
+    return audio.play();
   }, [id, tracks]);
 
+  // cleanup khi component unmount
   useEffect(() => {
-    console.log("useEffect – auto play");
-    play();
     return () => {
-      audioRef.current.pause();
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.src = '';
+        audioRef.current = null;
+      }
     };
-  }, [play]);
+  }, []);
 
   return play;
 }

@@ -1,16 +1,19 @@
 import React from 'react';
 import Card from './Card';
-import './Section.css';
 
-export default function Section({ title, items }) {
+export default function Section({ title, items, onCardClick }) {
     return (
-        <section className="section">
+        <div className="section">
             <h2>{title}</h2>
-            <div className="cards">
-                {items.map((item, idx) => (
-                    <Card key={idx} {...item} />
+            <div className="items">
+                {items.map(item => (
+                    <Card
+                        key={item.id}
+                        {...item}
+                        onClick={() => onCardClick(item.id)}
+                    />
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
