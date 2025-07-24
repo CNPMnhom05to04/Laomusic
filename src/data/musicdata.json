@@ -4,46 +4,46 @@
             "title": "Nghe gì hôm nay",
             "items": [
                 {
-                    "id": "1",
+                    "id": 1,
                     "image": "SonTung.jpg",
                     "name": "Muộn Rồi Mà Sao Còn",
                     "subtitle": "Sơn Tùng M-TP",
                     "url": "MUỘN RỒI MÀ SAO CÒN.mp3"
                 },
                 {
-                    "id": "2",
+                    "id": 2,
                     "image": "SonTung.jpg",
                     "name": "Chúng Ta Không Thuộc Về Nhau",
                     "subtitle": "Sơn Tùng M-TP",
                     "url": "Chúng Ta Không Thuộc Về Nhau .mp3"
                 },
                 {
-                    "id": "3",
+                    "id": 3,
                     "image": "SonTung.jpg",
                     "name": "Nơi Này Có Anh",
                     "subtitle": "Sơn Tùng M-TP",
                     "url": "NƠI NÀY CÓ ANH .mp3"
                 },
                 {
-                    "id": "4",
+                    "id": 4,
                     "image": "SonTung.jpg",
                     "name": "Lạc Trôi",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "id": "5",
+                    "id": 5,
                     "image": "SonTung.jpg",
                     "name": "Hãy Trao Cho Anh",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "id": "6",
+                    "id": 6,
                     "image": "SonTung.jpg",
                     "name": "There's No One At All",
                     "subtitle": "Sơn Tùng M-TP"
                 },
                 {
-                    "id": "7",
+                    "id": 7,
                     "image": "SonTung.jpg",
                     "name": "Chạy Ngay Đi",
                     "subtitle": "Sơn Tùng M-TP"
@@ -54,31 +54,31 @@
             "title": "Nhạc TOP100",
             "items": [
                 {
-                    "id": "8",
+                    "id": 8,
                     "image": "https://i.ytimg.com/vi/-GiQEctEv3c/hqdefault.jpg",
                     "name": "ສິມຈົ່ງຄືກັນນ້ອຍ",
                     "subtitle": "NGA SENGAMPHONE"
                 },
                 {
-                    "id": "9",
+                    "id": 9,
                     "image": "https://i.ytimg.com/vi/1Q0aSDUCRQw/hqdefault.jpg",
                     "name": "คำถามที่อยากฟังคำตอบ",
                     "subtitle": "GRAMMY GOLD"
                 },
                 {
-                    "id": "10",
+                    "id": 10,
                     "image": "https://i.ytimg.com/vi/FxFPSs71FSI/hqdefault.jpg",
                     "name": "จักรวาลไหน - Monica",
                     "subtitle": "19.Official"
                 },
                 {
-                    "id": "11",
+                    "id": 11,
                     "image": "https://i.ytimg.com/vi/Ir_qJteOI3c/hqdefault.jpg",
                     "name": "โลกทั้งใบ - เล็ก รัชชานนท์",
                     "subtitle": "Genierock"
                 },
                 {
-                    "id": "12",
+                    "id": 12,
                     "image": "https://i.ytimg.com/vi/kAYJ9I4nFBE/hqdefault.jpg",
                     "name": "ลำล่อง ลาวอีสาน",
                     "subtitle": "DOKJAN STUDIO"

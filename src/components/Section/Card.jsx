@@ -6,7 +6,11 @@ export default function Card({ image, name, subtitle, id, onClick }) {
     const imageSrc = useDynamicImage(image);
 
     return (
-        <div className="card" onClick={() => onClick(id)}>
+        <div className="card" onClick={() => {
+            onClick(id);
+            console.log('Card clicked:', id);
+        }
+        }>
             {imageSrc ? <img src={imageSrc} /> : <img src={image} />}
             <div className="info">
                 <p className="name">{name}</p>
