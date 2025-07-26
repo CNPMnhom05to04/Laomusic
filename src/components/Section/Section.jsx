@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-
+import './Section.css';
 export default function Section({ title, items, onCardClick }) {
     return (
         <div className="section">

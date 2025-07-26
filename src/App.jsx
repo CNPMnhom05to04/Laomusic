@@ -10,7 +10,9 @@ export default function App() {
     const sections = musicData.sections;
     const tracks = sections.flatMap(sec => sec.items);
     const [currentTrackId, setCurrentTrackId] = useState(null);
-
+    const handleCardClick = React.useCallback(id => {
+        setCurrentTrackId(id);
+    });
     return (
         <div className="app-container">
             <Sidebar />
@@ -22,7 +24,7 @@ export default function App() {
                             key={i}
                             title={sec.title}
                             items={sec.items}
-                            onCardClick={setCurrentTrackId}
+                            onCardClick={handleCardClick}
                         />
                     ))}
                 </main>

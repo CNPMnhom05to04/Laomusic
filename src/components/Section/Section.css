@@ -11,3 +11,9 @@
     grid-template-columns: repeat(auto-fill, 160px);
     gap: 16px;
 }
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}

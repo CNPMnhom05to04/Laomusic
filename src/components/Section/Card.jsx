@@ -1,10 +1,29 @@
 import React from 'react';
 import './Card.css';
 import useDynamicImage from '../../hooks/useDynamicImage';
+const imagesContext = require.context(
+    '../../assests/picture',   // thư mục
+    false,
+    /.(png|jpe?g|svg)$/
+);
 
-export default function Card({ image, name, subtitle, id, onClick }) {
-    const imageSrc = useDynamicImage(image);
+export default React.memo(function Card({ image, name, subtitle, id, onClick }) {
 
+    console.log(111)
+
+
+    const imageSrc = React.useMemo(() => {
+        if (!image) {
+            return '';
+        }
+
+        try {
+            return imagesContext(`./${image}`);
+        } catch (err) {
+            console.error('Error loading image:', err);
+            return ''; // hoặc đường dẫn placeholder
+        }
+    }, [image]);
     return (
         <div className="card" onClick={() => {
             onClick(id);
@@ -18,5 +37,5 @@ export default function Card({ image, name, subtitle, id, onClick }) {
             </div>
         </div>
     );
-}
+})
 
