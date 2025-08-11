@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import Section from './components/Section/Section';
 import PlayerBar from './components/PlayerBar/PlayerBar';
 import musicData from './data/musicdata.json';
-
+import './App.css'; // Import your main CSS file
 export default function App() {
     const sections = musicData.sections;
     const tracks = sections.flatMap(sec => sec.items);

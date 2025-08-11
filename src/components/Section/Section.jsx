@@ -1,34 +1,49 @@
 import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Card from './Card';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-
 import './Section.css';
 
 export default function Section({ title, items, onCardClick }) {
+
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 4,
+            slidesToSlide: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            slidesToSlide: 1,
+        }
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+            slidesToSlide: 1,
+        },
+    };
+
     return (
         <div className="section">
-            <h2>{title}</h2>
+            <h2 className="section-title">{title}</h2>
+            <Carousel
+                swipeable
+                draggable={false}
 
-            <Swiper
-                slidesPerView={1}
-                slidesPerGroup={1}
-                spaceBetween={16}
-                navigation
-                pagination={{ clickable: true }}
-                modules={[Navigation, Pagination]}
+                infinite={false}
+                keyBoardControl
+                responsive={responsive}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["mobile"]}
+                itemClass="carousel-item"
             >
                 {items.map(item => (
-                    <SwiperSlide key={item.id}>
+                    <div key={item.id} className="carousel-item-wrapper">
                         <Card {...item} onClick={() => onCardClick(item.id)} />
-                    </SwiperSlide>
+                    </div>
                 ))}
-
-                {/* Nếu bạn muốn custom next/prev */}
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
-                <div className="swiper-pagination"></div>
-            </Swiper>
+            </Carousel>
         </div>
     );
 }

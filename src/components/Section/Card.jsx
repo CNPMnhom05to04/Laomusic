@@ -21,9 +21,8 @@ export default React.memo(function Card({ image, name, subtitle, id, onClick }) 
             return imagesContext(`./${image}`);
         } catch (err) {
             console.error('Error loading image:', err);
-            return ''; // hoặc đường dẫn placeholder
-        }
-    }, [image]);
+            return '';
+        }, [image]);
     return (
         <div className="card" onClick={() => {
             onClick(id);

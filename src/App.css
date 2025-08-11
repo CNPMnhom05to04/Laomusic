@@ -1,0 +1,96 @@
+/* App.css */
+
+:root {
+    /* Tùy chỉnh kích thước chung */
+    --sidebar-width: 240px;
+    --header-height: 60px;
+    --playerbar-height: 80px;
+}
+
+/* 1. Wrapper chính */
+.app-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Chiều cao viewport */
+    overflow: hidden;
+    /* Ẩn overflow của toàn app */
+}
+
+/* 2. Sidebar cố định bên trái */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--playerbar-height));
+    background-color: #f5f5f5;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+/* 3. Header cố định phía trên, bên phải sidebar */
+.header {
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width);
+    right: 0;
+    height: var(--header-height);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+/* 4. Main-area chứa các Section và scroll độc lập */
+.main-area {
+    position: absolute;
+    top: var(--header-height);
+    left: var(--sidebar-width);
+    right: 0;
+    bottom: var(--playerbar-height);
+    overflow-y: auto;
+    padding: 16px;
+}
+
+/* 5. Style cho <main> nếu cần tách biệt */
+.main-area main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* 6. PlayerBar cố định dưới cùng */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--playerbar-height);
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+/* 7. Responsive: Chuyển sidebar và header về top trên mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-area {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: var(--playerbar-height);
+        padding: 8px;
+    }
+}
